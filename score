@@ -1,0 +1,20 @@
+// Function to update and check high scores
+function updateHighScore(score) {
+  // Retrieve existing high scores from localStorage
+  if (localStorage.getItem('highScore')) {
+    const existingHighScore = parseInt(localStorage.getItem('highScore'));
+
+    // Check if the current score is higher than the existing high score
+    if (score > existingHighScore) {
+      // Update the high score
+      localStorage.setItem('highScore', score);
+      return true; // Indicates that a new high score has been set
+    }
+  } else {
+    // If there is no existing high score, set the current score as the high score
+    localStorage.setItem('highScore', score);
+    return true; // Indicates that a new high score has been set
+  }
+
+  return false; // Indicates that the current score is not a new high score
+}

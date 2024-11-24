@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center ;
+  margin-top: 50px;
+  height: 100vh;
+  background-image: url('bg(G1).png');
+  background-size: cover
+}
+input {
+  padding: 10px;
+  margin: 10px;  
+  border-radius: 10px;
+  transform: translate(0 , 250px);
+} 
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+.number {
+  position: absolute;
+  color: rgb(173, 37, 231);
+  font-size: 25px;
+}
+.btn {
+  border-radius: 10px;
+  transform: translate(0 , 250px);
+}
+.T1{
+  font-size: 50px;
+  color: rgb(231, 37, 37);
+  text-align: center;
+  transform: translate(0 , 150px);
+}
+.T2{
+  font-size: 25px;
+  color: rgb(231, 37, 37);
+  text-align: center;
+  transform: translate(0 , 150px);
+}
+.T3{
+  font-size: 25px;
+  color: rgb(231, 37, 37);
+  text-align: center;
+  transform: translate(0 , 150px);
+}
+.Result{
+  text-align: center;
+  transform: translate(0 ,90px);
+  font-size: 30px;
+  color: chocolate;
+}

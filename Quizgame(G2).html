@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program file</title>
+    <link rel="stylesheet" href="style(G2).css"/>
+</head>
+<body>
+    <!--start quiz btn-->
+    <div class="start_btn"><button>Start Quiz</button>
+        <!-- <input type="text" name="name" id="player" placeholder="Enter your name"> -->
+    </div>
+    <!--Info box or main container-->
+    <div class="info_box"> 
+        <div class="info_title">
+            <span>Some rules of this quiz</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. You will have <span>10 sec</span> per question</div>
+            <div class="info">2. Once you select your answer, you can't reselect</div>
+            <div class="info">3. You can't select any option once the time goes off</div>
+            <div class="info">4. You can't exit from the quiz while playing</div>
+            <div class="info">5. You will get points on the basis of your correct answer.</div>
+        </div>
+        <div class="buttons">
+            <button  class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!--QUIZ BOX-->
+    <div class="quiz_box">
+        <header>
+            <div class="title">AWESOME APPLICATION QUIZ</div>
+            <div class="timer">
+                <div class="time_text">Time left</div>
+                <div class="timer_sec">10</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <!-- section box-->
+        <section>
+            <div class="que_text">
+                <!--The <section> tag defines a section in a document-->
+                   <span><!--What does HTML stand for ?--></span>
+            </div>
+            <div class="option_list">
+                <div class="option">
+                    <span><!--HighText Machine Language--></span>
+                    <div class="icon tick"><i class="fa-solid fa-check"></i></div>
+            </div>
+    
+                <div class="option">
+                    <span><!-- HyperText and links Markup Language --></span>
+                    <div class="icon cross"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+        
+                <div class="option">
+                    <span><!-- HyperText Markup Language --></span>
+            </div>
+       
+                <div class="option">
+                    <span><!-- None of these --></span>
+                </div>
+        </section>
+
+        <!--QUIZ footer -->
+        <footer>
+            <div class="total_que">
+                <!-- <span><p>2</p>Of<p>5</p>Question</span> -->
+            </div>
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
+
+    <!--Result box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fa-solid fa-crown"></i>
+        </div>
+        <div class="complete_text">You have completed this Quiz!!</div>
+        <div class="score_text">
+            <!-- <span><p>and sorry, You have got only 2 out of 5</p></span> -->
+        </div>
+        <h1 class="finalScore"></h1>
+        <div class="buttons">
+            <!-- <button class="restart">Replay Quiz</button> -->
+        <!-- <button id="saveScoreBtn" type="submit" class="btn" onclick="saveHighScore(event)">Save score</button> -->
+            <button class="quit">Replay Quiz</button>
+        </div>
+        <div class="confetti">
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+            <div class="confetti-piece"></div>
+        </div>
+    </div>
+          <!-- high Score Box -->
+    <div id="highscores" class="LeaderBoard">
+        <h1 id="finalScore">highscores LeaderBoard</h1>
+        <h1 id="finalScore"> Rank  |  Scores</h1>
+        <ul id="highScoresList"></ul>
+    </div>
+
+    <!-- high Score Box
+    <div id="highscores" class="LeaderBoard">
+        <h1 id="finalScore">highscores LeaderBoard</h1>
+        <ul id="highScoresList"></ul>
+    </div> -->
+
+    <script src="https://kit.fontawesome.com/8506b76b56.js" crossorigin="anonymous"></script>
+    <script src="script(G2).js">
+        
+    </script>
+    <script src="highscore.js"></script>
+    <script src="question(G2).js">
+    </script>
+</body>
+</html>

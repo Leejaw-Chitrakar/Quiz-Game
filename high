@@ -1,0 +1,34 @@
+// Function to store highscore with two arguments (playerName and score)
+function storeHighscore(playerName, score) {
+  // Assuming you want to store multiple highscores, you can use an array
+  // Each highscore entry is an object with 'playerName' and 'score' properties
+  let highscores = [];
+
+  // Check if there are existing highscores stored in localStorage
+  if (localStorage.getItem('highscores')) {
+    // Retrieve existing highscores
+    highscores = JSON.parse(localStorage.getItem('highscores'));
+  }
+
+  // Create a new highscore entry
+  const newHighscore = {
+    playerName: playerName,
+    score: score
+  };
+
+  // Add the new highscore to the array
+  highscores.push(newHighscore);
+
+  // Sort the highscores based on the scores in descending order
+  highscores.sort((a, b) => b.score - a.score);
+
+  // Store the updated highscores in localStorage
+  localStorage.setItem('highscores', JSON.stringify(highscores));
+
+  console.log('Highscores stored:', highscores);
+}
+
+// Example usage:
+storeHighscore('Player1', 100);
+storeHighscore('Player2', 150);
+storeHighscore('Player3', 120);

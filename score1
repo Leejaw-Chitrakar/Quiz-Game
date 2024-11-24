@@ -1,0 +1,25 @@
+// Inside the showResultBox function
+function showResultBox() {
+  info_box.classList.remove("activeInfo");
+  quiz_box.classList.remove("activeQuiz");
+  result_box.classList.add("activeResult");
+
+  const scoreText = result_box.querySelector(".score_text");
+
+  if (userScore >= 10) {
+    let scoreTag = `<span><p>Congrats! You have got ${userScore} out of ${totalquestion}</p></span>`;
+    scoreText.innerHTML = scoreTag;
+
+    // Check and update high score
+    if (updateHighScore(userScore)) {
+      console.log("New High Score: " + userScore);
+    }
+  } else if (userScore > 5) {
+    let scoreTag = `<span><p>Nice! You have got ${userScore} out of ${totalquestion}</p></span>`;
+    scoreText.innerHTML = scoreTag;
+  } else {
+    let scoreTag = `<span><p>Sorry! You have got ${userScore} out of ${totalquestion}</p></span>`;
+    scoreText.innerHTML = scoreTag;
+  }
+  console.log("User Score: " + userScore);
+}

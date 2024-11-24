@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Game</title>
+  <script src="javascript(G1).js"></script>
+  <link rel="stylesheet" href="style(G1).css">
+</head>
+<body >
+ <p class="T1">Number Guessing Game</p>
+  <p class="T2">Guess a number between 1 and 100</p>
+  <p class="T3" id="attemptCount">Attempts: 0</p>
+  <input type="text" id="guessInput">
+  <br>
+  <button  class="btn" onclick="checkGuess()">Submit Guess</button>
+  <p class="Result" id="message"></p>
+<script>
+  // Function to create a moving number
+  function createMovingNumber() {
+    const number = document.createElement('div');
+    number.className = 'number';
+    document.body.appendChild(number);
+
+    // Set initial position
+    number.style.left = Math.random() * window.innerWidth + 'px';
+    number.style.top = Math.random() * window.innerHeight + 'px';
+
+    // Set a random number
+    number.textContent = Math.floor(Math.random() * 100);
+
+    // Animation
+    function moveNumber() {
+      const speed = 2;
+      const angle = Math.random() * 180 * Math.PI;
+      const dx = Math.cos(angle) * speed;
+      const dy = Math.sin(angle) * speed;
+
+      const rect = number.getBoundingClientRect();
+      let newX = rect.left + dx;
+      let newY = rect.top + dy;
+
+      // Check boundaries
+      if (newX < 0 || newX + rect.width > window.innerWidth) {
+        newX = rect.left - dx;
+      }
+
+      if (newY < 0 || newY + rect.height > window.innerHeight) {
+        newY = rect.top - dy;
+      }
+
+      number.style.left = newX + 'px';
+      number.style.top = newY + 'px';
+
+      requestAnimationFrame(moveNumber);
+    }
+
+    moveNumber();
+  }
+
+  // Create multiple moving numbers
+  for (let i = 0; i < 20; i++) {
+    createMovingNumber();
+  }
+</script>
+</body>
+</html>
