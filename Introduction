@@ -1,31 +1,32 @@
 Project: Interactive Quiz Game
 Made by: Leejaw Chitrakar, Samit Shrestha and Rijan Shrestha
-Objective: To create an engaging and interactive quiz game that tests users' knowledge on various subjects, allowing for a fun and educational experience.
+Objective: To create an engaging and interactive quiz game that tests users' knowledge of various subjects, allowing for a fun and educational experience.
 
-Introduction:
-The Interactive Quiz Game was developed by a team of students, including Leejaw Chitrakar, Samit Shrestha and Rijan Shrestha as part of a collaborative project 
-aimed at honing programming skills and creating a user-friendly application. The goal of the project was to provide a dynamic way for users 
-to test their knowledge while also improving our coding abilities in HTML, CSS, and JavaScript.
+The Interactive Quiz and Number Guessing Game were developed by a team of students, including Leejaw Chitrakar, Samit Shrestha, and Rijan Shrestha as part of a collaborative project 
+aimed at honing our programming skills and offering an engaging experience to users. The project provides two games on a single platform: a Quiz Game and a Number Guessing Game. 
+Each game offers a unique way for users to challenge themselves and have fun while improving their HTML, CSS, and JavaScript skills.
 
 Why It Was Made:
-The quiz game was created to address the need for engaging educational tools. 
-With the rise of online learning and interactive content, 
-We saw an opportunity to create a fun and challenging way for users to practice and test their knowledge across different subjects. 
-Our main aim was to provide a resource that users could enjoy while learning, making the process both entertaining and informative.
+The project was created to provide an interactive experience where users could choose between two types of games: a knowledge-based quiz or a logical number-guessing game. 
+The goal was to engage users in a fun and educational way, offering different types of challenges through games. 
+By combining two distinct game types, we aimed to reach a wider audience and allow players to choose a game that suited their interests.
 
 How It Was Made:
-The game was developed using HTML for the structure, CSS for the design, and JavaScript to handle the game logic, including question display, scoring, and the randomization of questions.
-The interface was designed to be simple and intuitive, making it easy for users to navigate through the quiz. 
-JavaScript played a key role in creating a seamless interaction between the player and the game by ensuring smooth transitions between questions and calculating scores.
+When users open the index.html file, they are presented with an introductory page where they can choose between the Number Guessing Game and the Quiz Game.
+The Quiz Game was developed using HTML for the structure, CSS for the design, and JavaScript for the logic. 
+It challenges players with randomized questions and keeps track of scores.
+The Number Guessing Game was also built with HTML, CSS, and JavaScript. 
+In this game, players must guess a randomly generated number within a specified range. The game gives hints (higher or lower) after each guess until the user guesses the correct number.
 
 Challenges Faced:
-One of the most significant challenges the team faced was randomizing the questions in such a way that the answers weren’t displayed in a predictable pattern. 
-Without randomization, users could easily memorize the answer sequences and cheat during multiple attempts. 
-To overcome this, we spent considerable time troubleshooting and implementing a randomization algorithm in JavaScript, 
-ensuring that the questions and answers appeared in a unique order with each attempt. 
-This challenge taught us valuable problem-solving techniques and helped improve our teamwork and coding efficiency.
+For both games, the team faced a few challenges:
+In the Quiz Game, the most significant challenge was randomizing the questions and answers, ensuring users couldn’t memorize the patterns. 
+The solution was to implement a randomization algorithm in JavaScript.
+In the Number Guessing Game, the challenge was to ensure that the range of numbers was clear and that the user interface provided helpful feedback without overwhelming the player. 
+We worked to balance user-friendly design with functional gameplay, such as providing feedback on whether the guess was too high or too low.
 
 Outcome:
-The final product was a fully functional quiz game that provided users with a fresh and dynamic experience every time they played. 
-It was a successful project that not only met the original objectives but also allowed the team to learn more about JavaScript, web development, and teamwork. 
-The project helped us better understand how to handle user interactions and optimize the game for a smooth and enjoyable experience.
+The final product was a fully functional game platform that allowed users to choose between two different types of games. 
+Both games were designed to be user-friendly, with smooth interactions and clear instructions. 
+This project helped the team learn how to integrate multiple game features into one platform and reinforced our JavaScript skills, 
+particularly in handling user input, randomization, and event-driven programming.
