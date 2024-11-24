@@ -1,0 +1,31 @@
+Project: Interactive Quiz Game
+Made by: Leejaw Chitrakar, Samit Shrestha and Rijan Shrestha
+Objective: To create an engaging and interactive quiz game that tests users' knowledge on various subjects, allowing for a fun and educational experience.
+
+Introduction:
+The Interactive Quiz Game was developed by a team of students, including Leejaw Chitrakar, Samit Shrestha and Rijan Shrestha as part of a collaborative project 
+aimed at honing programming skills and creating a user-friendly application. The goal of the project was to provide a dynamic way for users 
+to test their knowledge while also improving our coding abilities in HTML, CSS, and JavaScript.
+
+Why It Was Made:
+The quiz game was created to address the need for engaging educational tools. 
+With the rise of online learning and interactive content, 
+We saw an opportunity to create a fun and challenging way for users to practice and test their knowledge across different subjects. 
+Our main aim was to provide a resource that users could enjoy while learning, making the process both entertaining and informative.
+
+How It Was Made:
+The game was developed using HTML for the structure, CSS for the design, and JavaScript to handle the game logic, including question display, scoring, and the randomization of questions.
+The interface was designed to be simple and intuitive, making it easy for users to navigate through the quiz. 
+JavaScript played a key role in creating a seamless interaction between the player and the game by ensuring smooth transitions between questions and calculating scores.
+
+Challenges Faced:
+One of the most significant challenges the team faced was randomizing the questions in such a way that the answers weren’t displayed in a predictable pattern. 
+Without randomization, users could easily memorize the answer sequences and cheat during multiple attempts. 
+To overcome this, we spent considerable time troubleshooting and implementing a randomization algorithm in JavaScript, 
+ensuring that the questions and answers appeared in a unique order with each attempt. 
+This challenge taught us valuable problem-solving techniques and helped improve our teamwork and coding efficiency.
+
+Outcome:
+The final product was a fully functional quiz game that provided users with a fresh and dynamic experience every time they played. 
+It was a successful project that not only met the original objectives but also allowed the team to learn more about JavaScript, web development, and teamwork. 
+The project helped us better understand how to handle user interactions and optimize the game for a smooth and enjoyable experience.
